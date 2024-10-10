@@ -13,6 +13,7 @@ export class BankAccount {
     this.client = client;
   }
 
+  // Este método possui complexidade ciclomática igual a 2
   deposit(value: number): void {
     if (value > 0) {
       this._balance += value;
