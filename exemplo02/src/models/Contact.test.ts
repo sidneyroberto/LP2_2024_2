@@ -26,17 +26,26 @@ describe("Tests over Contact class", () => {
 
   it("should not create a contact with invalid name", () => {
     const nameValue = "Tal";
-    const phoneValue = "(99) 99999-9999";
-    const emailValue = "fulano@email.com";
 
     try {
       const contact = new Contact();
       contact.name = nameValue;
-      contact.phone = phoneValue;
-      contact.email = emailValue;
+      fail("It allowed to set an invalid name");
     } catch (err) {
       expect(err).toBeInstanceOf(ContactCreationError);
       expect(err.message).toBe(ContactErrorMessages.NAME_ERROR_MESSAGE);
+    }
+  });
+
+  it("should not create a contact with invalid phone", () => {
+    const contact = new Contact();
+
+    try {
+      contact.phone = "12345-6789";
+      fail("It allowed to set an invalid phone");
+    } catch (err) {
+      expect(err).toBeInstanceOf(ContactCreationError);
+      expect(err.message).toBe(ContactErrorMessages.PHONE_ERROR_MESSAGE);
     }
   });
 });
