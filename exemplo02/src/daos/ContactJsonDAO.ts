@@ -1,8 +1,7 @@
 import { join } from "path";
 
 import { Contact } from "../models/Contact";
-import contacts from "../data/contacts.json";
-import { writeFileSync } from "fs";
+import { readFileSync, writeFileSync } from "fs";
 import { ContactCreationError } from "../errors/ContactCreationError";
 import { ContactErrorMessages } from "../enums/ContactErrorMessages";
 
@@ -10,6 +9,9 @@ export class ContactJsonDAO {
   private _contacts: Contact[];
 
   constructor() {
+    const filePath = join(__dirname, "..", "data", "contacts.json");
+    const contactsStr = readFileSync(filePath, "utf-8");
+    const contacts = JSON.parse(contactsStr);
     this._contacts = contacts.map((c) => {
       const { _name, _phone, _email, _address, _birthday } = c;
       return new Contact(_name, _phone, _email, _address, new Date(_birthday));
