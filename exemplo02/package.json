@@ -5,8 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "ts-node src/index.ts",
-    "test": "jest --watchAll --coverage",
-    "generate": "ts-node src/generateContacts.ts"
+    "test": "jest --watchAll --coverage"
   },
   "devDependencies": {
     "@faker-js/faker": "^9.2.0",

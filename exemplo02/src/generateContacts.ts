@@ -4,42 +4,45 @@ import { writeFileSync } from "fs";
 
 import { Contact } from "./models/Contact";
 
-const contacts: Contact[] = [];
 export const TOTAL = 100;
-let csvLines = "NOME,E-MAIL,TELEFONE,ENDEREÇO,DATA DE NASCIMENTO\n";
 
-for (let i = 0; i < TOTAL; i++) {
-  const firstName = faker.person.firstName();
-  const lastName = faker.person.lastName();
-  const fullName = `${firstName} ${lastName}`;
-  const email = faker.internet.email({
-    firstName,
-    lastName,
-    provider: "estudante.ifms.edu.br",
-  });
-  const address = faker.location.streetAddress({ useFullAddress: true });
-  const birthday = faker.date.between({
-    from: "1970-01-01",
-    to: "2010-12-31",
-  });
-  const phone = faker.phone.number({ style: "national" });
+export const generateContacts = () => {
+  const contacts: Contact[] = [];
+  let csvLines = "NOME,E-MAIL,TELEFONE,ENDEREÇO,DATA DE NASCIMENTO\n";
 
-  const contact = new Contact(fullName, phone, email, address, birthday);
-  contacts.push(contact);
+  for (let i = 0; i < TOTAL; i++) {
+    const firstName = faker.person.firstName();
+    const lastName = faker.person.lastName();
+    const fullName = `${firstName} ${lastName}`;
+    const email = faker.internet.email({
+      firstName,
+      lastName,
+      provider: "estudante.ifms.edu.br",
+    });
+    const address = faker.location.streetAddress({ useFullAddress: true });
+    const birthday = faker.date.between({
+      from: "1970-01-01",
+      to: "2010-12-31",
+    });
+    const phone = faker.phone.number({ style: "national" });
 
-  const line = `${fullName},${email},${phone},${address},${birthday.toDateString()}\n`;
-  csvLines += line;
-}
+    const contact = new Contact(fullName, phone, email, address, birthday);
+    contacts.push(contact);
 
-const filesPath = join(__dirname, "data");
+    const line = `${fullName},${email},${phone},${address},${birthday.toDateString()}\n`;
+    csvLines += line;
+  }
 
-// Salvando o arquivo JSON
-const contactsStr = JSON.stringify(contacts);
-const jsonFileName = join(filesPath, "contacts.json");
-writeFileSync(jsonFileName, contactsStr);
+  const filesPath = join(__dirname, "data");
 
-// Salvando o arquivo CSV
-const csvFileName = join(filesPath, "contacts.csv");
-writeFileSync(csvFileName, csvLines);
+  // Salvando o arquivo JSON
+  const contactsStr = JSON.stringify(contacts);
+  const jsonFileName = join(filesPath, "contacts.json");
+  writeFileSync(jsonFileName, contactsStr);
 
-console.log("Mal feito desfeito");
+  // Salvando o arquivo CSV
+  const csvFileName = join(filesPath, "contacts.csv");
+  writeFileSync(csvFileName, csvLines);
+
+  console.log("Mal feito desfeito");
+};

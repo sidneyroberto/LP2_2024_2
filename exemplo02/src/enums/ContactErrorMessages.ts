@@ -4,4 +4,5 @@ export enum ContactErrorMessages {
   EMAIL_ERROR_MESSAGE = "Email must be valid",
   BIRTHDAY_ERROR_MESSAGE = "Birthday must be in past",
   ADDRESS_ERROR_MESSAGE = "Address must have at least 5 characters",
+  EMAIL_ALREADY_EXISTS_MESSAGE = "An user with this email already exists",
 }
