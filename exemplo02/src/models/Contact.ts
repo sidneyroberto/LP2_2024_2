@@ -10,6 +10,20 @@ export class Contact {
   private _address?: string;
   private _birthday?: Date;
 
+  constructor(
+    name: string,
+    phone: string,
+    email: string,
+    address?: string,
+    birthday?: Date
+  ) {
+    this.name = name;
+    this.phone = phone;
+    this.email = email;
+    this.address = address;
+    this.birthday = birthday;
+  }
+
   set name(name: string) {
     if (name.trim().length >= 5) {
       this._name = name;
@@ -23,7 +37,7 @@ export class Contact {
   }
 
   set phone(phone: string) {
-    if (/^\(\d{2}\)\s\d{5}-\d{4}$/.test(phone)) {
+    if (/^\(\d{2}\)\s(\d{5}|\d{4})-\d{4}$/.test(phone)) {
       this._phone = phone;
     } else {
       throw new ContactCreationError(ContactErrorMessages.PHONE_ERROR_MESSAGE);

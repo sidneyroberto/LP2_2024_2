@@ -5,17 +5,18 @@ import { Contact } from "./Contact";
 describe("Tests over Contact class", () => {
   it("should create a contact with valid inputs", () => {
     const nameValue = "Fulano de Tal";
-    const phoneValue = "(99) 99999-9999";
+    const phoneValue = "(99) 9999-9999";
     const emailValue = "fulano@email.com";
     const addresValue = "Rua dos Fulanos, 57";
     const birthdayValue = new Date("1990-08-23");
 
-    const contact = new Contact();
-    contact.name = nameValue;
-    contact.phone = phoneValue;
-    contact.email = emailValue;
-    contact.address = addresValue;
-    contact.birthday = birthdayValue;
+    const contact = new Contact(
+      nameValue,
+      phoneValue,
+      emailValue,
+      addresValue,
+      birthdayValue
+    );
 
     expect(contact.name).toBe(nameValue);
     expect(contact.phone).toBe(phoneValue);
@@ -26,10 +27,11 @@ describe("Tests over Contact class", () => {
 
   it("should not create a contact with invalid name", () => {
     const nameValue = "Tal";
+    const phoneValue = "(99) 99999-9999";
+    const emailValue = "fulano@email.com";
 
     try {
-      const contact = new Contact();
-      contact.name = nameValue;
+      const contact = new Contact(nameValue, phoneValue, emailValue);
       fail("It allowed to set an invalid name");
     } catch (err) {
       expect(err).toBeInstanceOf(ContactCreationError);
@@ -38,10 +40,12 @@ describe("Tests over Contact class", () => {
   });
 
   it("should not create a contact with invalid phone", () => {
-    const contact = new Contact();
+    const nameValue = "Fulano de Tal";
+    const phoneValue = "12345-6789";
+    const emailValue = "fulano@email.com";
 
     try {
-      contact.phone = "12345-6789";
+      const contact = new Contact(nameValue, phoneValue, emailValue);
       fail("It allowed to set an invalid phone");
     } catch (err) {
       expect(err).toBeInstanceOf(ContactCreationError);
