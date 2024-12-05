@@ -10,15 +10,17 @@ export class ContactCsvDAO extends ContactDAO {
 
     const arr = this._strContent.split("\n").slice(1);
     arr.forEach((c) => {
-      const values = c.split(",");
-      const name = values[0];
-      const email = values[1];
-      const phone = values[2];
-      const address = values[3];
-      const birthday = new Date(values[4]);
+      if (c) {
+        const values = c.split(",");
+        const name = values[0];
+        const email = values[1];
+        const phone = values[2];
+        const address = values[3];
+        const birthday = new Date(values[4]);
 
-      const contact = new Contact({ name, phone, email, address, birthday });
-      this._contacts.push(contact);
+        const contact = new Contact({ name, phone, email, address, birthday });
+        this._contacts.push(contact);
+      }
     });
   }
 

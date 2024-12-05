@@ -30,7 +30,7 @@ export abstract class ContactDAO {
   /**
    * Recupera um contato pelo seu e-mail único.
    * @param email o e-mail do contato
-   * @returns o contacto encontrado ou undefined
+   * @returns o contato encontrado ou undefined
    */
   findUserByEmail(email: string) {
     const contact = this._contacts.find((c) => c.email === email);

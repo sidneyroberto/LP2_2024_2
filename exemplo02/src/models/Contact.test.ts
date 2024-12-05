@@ -46,4 +46,48 @@ describe("Tests over Contact class", () => {
       expect(err.message).toBe(ContactErrorMessages.PHONE_ERROR_MESSAGE);
     }
   });
+
+  it("should not create a contact with invalid email", () => {
+    const name = "Fulano de Tal";
+    const phone = "(99) 99999-9999";
+    const email = "fulano.email.com";
+
+    try {
+      new Contact({ name, phone, email });
+      fail("It allowed to set an invalid email");
+    } catch (err) {
+      expect(err).toBeInstanceOf(ContactCreationError);
+      expect(err.message).toBe(ContactErrorMessages.EMAIL_ERROR_MESSAGE);
+    }
+  });
+
+  it("should not create a contact with invalid address", () => {
+    const name = "Fulano de Tal";
+    const phone = "(99) 99999-9999";
+    const email = "fulano@email.com";
+    const address = "Av 7";
+
+    try {
+      new Contact({ name, phone, email, address });
+      fail("It allowed to set an invalid address");
+    } catch (err) {
+      expect(err).toBeInstanceOf(ContactCreationError);
+      expect(err.message).toBe(ContactErrorMessages.ADDRESS_ERROR_MESSAGE);
+    }
+  });
+
+  it("should not create a contact with invalid birthday", () => {
+    const name = "Fulano de Tal";
+    const phone = "(99) 99999-9999";
+    const email = "fulano@email.com";
+    const birthday = new Date("2050-02-01");
+
+    try {
+      new Contact({ birthday, name, phone, email });
+      fail("It allowed to set an invalid birthday");
+    } catch (err) {
+      expect(err).toBeInstanceOf(ContactCreationError);
+      expect(err.message).toBe(ContactErrorMessages.BIRTHDAY_ERROR_MESSAGE);
+    }
+  });
 });

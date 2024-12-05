@@ -23,8 +23,14 @@ export class Contact {
     this.name = name;
     this.phone = phone;
     this.email = email;
-    this.address = address;
-    this.birthday = birthday;
+
+    if (address) {
+      this.address = address;
+    }
+
+    if (birthday) {
+      this.birthday = birthday;
+    }
   }
 
   set name(name: string) {
@@ -64,7 +70,7 @@ export class Contact {
   }
 
   set address(address: string) {
-    if (address.trim().length >= 5) {
+    if (address && address.trim().length >= 5) {
       this._address = address;
     } else {
       throw new ContactCreationError(
