@@ -17,7 +17,7 @@ export class ContactCsvDAO extends ContactDAO {
       const address = values[3];
       const birthday = new Date(values[4]);
 
-      const contact = new Contact(name, phone, email, address, birthday);
+      const contact = new Contact({ name, phone, email, address, birthday });
       this._contacts.push(contact);
     });
   }

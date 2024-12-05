@@ -16,13 +16,13 @@ describe("Tests over ContactJsonDAO class", () => {
   });
 
   it("should save a new contact with distinct email", () => {
-    const contact = new Contact(
-      "Fulano de Tal",
-      "(99) 99999-9999",
-      "fulano@email.com",
-      "Rua dos Fulanos, 123",
-      new Date("1990-12-25")
-    );
+    const contact = new Contact({
+      name: "Fulano de Tal",
+      phone: "(99) 99999-9999",
+      email: "fulano@email.com",
+      address: "Rua dos Fulanos, 123",
+      birthday: new Date("1990-12-25"),
+    });
 
     dao.save(contact);
 
@@ -34,13 +34,13 @@ describe("Tests over ContactJsonDAO class", () => {
   });
 
   it("should not save a contact with an already existing email", () => {
-    const contact = new Contact(
-      "Fulano de Tal",
-      "(99) 99999-9999",
-      "fulano@email.com",
-      "Rua dos Fulanos, 123",
-      new Date("1990-12-25")
-    );
+    const contact = new Contact({
+      name: "Fulano de Tal",
+      phone: "(99) 99999-9999",
+      email: "fulano@email.com",
+      address: "Rua dos Fulanos, 123",
+      birthday: new Date("1990-12-25"),
+    });
 
     try {
       dao.save(contact);

@@ -3,6 +3,14 @@ import * as EmailValidator from "email-validator";
 import { ContactErrorMessages } from "../enums/ContactErrorMessages";
 import { ContactCreationError } from "../errors/ContactCreationError";
 
+type ContactParams = {
+  name: string;
+  phone: string;
+  email: string;
+  address?: string;
+  birthday?: Date;
+};
+
 export class Contact {
   private _name: string = "";
   private _phone: string = "";
@@ -10,13 +18,8 @@ export class Contact {
   private _address?: string;
   private _birthday?: Date;
 
-  constructor(
-    name: string,
-    phone: string,
-    email: string,
-    address?: string,
-    birthday?: Date
-  ) {
+  constructor({ email, name, phone, address, birthday }: ContactParams) {
+    //const { email, name, phone, address, birthday } = params;
     this.name = name;
     this.phone = phone;
     this.email = email;

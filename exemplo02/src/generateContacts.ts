@@ -26,7 +26,13 @@ export const generateContacts = () => {
     });
     const phone = faker.phone.number({ style: "national" });
 
-    const contact = new Contact(fullName, phone, email, address, birthday);
+    const contact = new Contact({
+      name: fullName,
+      phone,
+      email,
+      address,
+      birthday,
+    });
     contacts.push(contact);
 
     const line = `${fullName},${email},${phone},${address},${birthday.toDateString()}\n`;

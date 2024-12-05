@@ -1,9 +1,7 @@
 import { join } from "path";
-import { readFileSync, writeFileSync } from "fs";
+import { writeFileSync } from "fs";
 
 import { Contact } from "../models/Contact";
-import { ContactCreationError } from "../errors/ContactCreationError";
-import { ContactErrorMessages } from "../enums/ContactErrorMessages";
 import { ContactDAO } from "./ContactDAO";
 
 export class ContactJsonDAO extends ContactDAO {
@@ -13,7 +11,13 @@ export class ContactJsonDAO extends ContactDAO {
     const contacts = JSON.parse(this._strContent);
     this._contacts = contacts.map((c) => {
       const { _name, _phone, _email, _address, _birthday } = c;
-      return new Contact(_name, _phone, _email, _address, new Date(_birthday));
+      return new Contact({
+        name: _name,
+        phone: _phone,
+        email: _email,
+        address: _address,
+        birthday: new Date(_birthday),
+      });
     });
   }
 

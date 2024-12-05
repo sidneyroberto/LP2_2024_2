@@ -12,6 +12,7 @@ export abstract class ContactDAO {
   constructor(filename: string) {
     const filePath = join(__dirname, "..", "data", filename);
     this._strContent = readFileSync(filePath, "utf-8");
+    this._contacts = [];
   }
 
   save(contact: Contact) {
