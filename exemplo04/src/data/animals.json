@@ -1,0 +1,259 @@
+{
+  "animals": [
+    {
+      "scientificName": "Panthera leo",
+      "habitat": "Savanna",
+      "popularName": "Lion"
+    },
+    {
+      "scientificName": "Tursiops truncatus",
+      "habitat": "Ocean",
+      "popularName": "Bottlenose Dolphin"
+    },
+    {
+      "scientificName": "Ara macao",
+      "habitat": "Tropical Rainforest",
+      "popularName": "Scarlet Macaw"
+    },
+    {
+      "scientificName": "Ailuropoda melanoleuca",
+      "habitat": "Temperate Broadleaf Forest",
+      "popularName": "Giant Panda"
+    },
+    {
+      "scientificName": "Panthera tigris",
+      "habitat": "Tropical and Subtropical Forest",
+      "popularName": "Tiger"
+    },
+    {
+      "scientificName": "Gorilla beringei",
+      "habitat": "Mountain Forest",
+      "popularName": "Mountain Gorilla"
+    },
+    {
+      "scientificName": "Ursus maritimus",
+      "habitat": "Arctic",
+      "popularName": "Polar Bear"
+    },
+    {
+      "scientificName": "Lepidochelys olivacea",
+      "habitat": "Ocean",
+      "popularName": "Olive Ridley Sea Turtle"
+    },
+    {
+      "scientificName": "Giraffa camelopardalis",
+      "habitat": "Savanna",
+      "popularName": "Giraffe"
+    },
+    {
+      "scientificName": "Pteropus vampyrus",
+      "habitat": "Tropical Forest",
+      "popularName": "Large Flying Fox"
+    },
+    {
+      "scientificName": "Phoenicopterus roseus",
+      "habitat": "Wetlands",
+      "popularName": "Greater Flamingo"
+    },
+    {
+      "scientificName": "Hippocampus kuda",
+      "habitat": "Coral Reef",
+      "popularName": "Yellow Seahorse"
+    },
+    {
+      "scientificName": "Vulpes vulpes",
+      "habitat": "Various",
+      "popularName": "Red Fox"
+    },
+    {
+      "scientificName": "Geochelone gigantea",
+      "habitat": "Tropical Islands",
+      "popularName": "Aldabra Giant Tortoise"
+    },
+    {
+      "scientificName": "Canis lupus arctos",
+      "habitat": "Tundra",
+      "popularName": "Arctic Wolf"
+    },
+    {
+      "scientificName": "Bubo scandiacus",
+      "habitat": "Arctic Tundra",
+      "popularName": "Snowy Owl"
+    },
+    {
+      "scientificName": "Macropus rufus",
+      "habitat": "Arid Plains",
+      "popularName": "Red Kangaroo"
+    },
+    {
+      "scientificName": "Hydrochoerus hydrochaeris",
+      "habitat": "Wetlands",
+      "popularName": "Capybara"
+    },
+    {
+      "scientificName": "Crocodylus niloticus",
+      "habitat": "Rivers",
+      "popularName": "Nile Crocodile"
+    },
+    {
+      "scientificName": "Panthera onca",
+      "habitat": "Tropical Forest",
+      "popularName": "Jaguar"
+    },
+    {
+      "scientificName": "Spheniscus humboldti",
+      "habitat": "Coastal Areas",
+      "popularName": "Humboldt Penguin"
+    },
+    {
+      "scientificName": "Equus zebra",
+      "habitat": "Savanna",
+      "popularName": "Mountain Zebra"
+    },
+    {
+      "scientificName": "Rhinoceros unicornis",
+      "habitat": "Grasslands",
+      "popularName": "Indian Rhinoceros"
+    },
+    {
+      "scientificName": "Pongo abelii",
+      "habitat": "Tropical Rainforest",
+      "popularName": "Sumatran Orangutan"
+    },
+    {
+      "scientificName": "Balaenoptera musculus",
+      "habitat": "Ocean",
+      "popularName": "Blue Whale"
+    },
+    {
+      "scientificName": "Aquila chrysaetos",
+      "habitat": "Mountains",
+      "popularName": "Golden Eagle"
+    },
+    {
+      "scientificName": "Chelonia mydas",
+      "habitat": "Ocean",
+      "popularName": "Green Sea Turtle"
+    },
+    {
+      "scientificName": "Acinonyx jubatus",
+      "habitat": "Savanna",
+      "popularName": "Cheetah"
+    },
+    {
+      "scientificName": "Elephas maximus",
+      "habitat": "Tropical Forest",
+      "popularName": "Asian Elephant"
+    },
+    {
+      "scientificName": "Cervus elaphus",
+      "habitat": "Temperate Forest",
+      "popularName": "Red Deer"
+    },
+    {
+      "scientificName": "Orcinus orca",
+      "habitat": "Ocean",
+      "popularName": "Killer Whale"
+    },
+    {
+      "scientificName": "Manta birostris",
+      "habitat": "Ocean",
+      "popularName": "Giant Manta Ray"
+    },
+    {
+      "scientificName": "Camelus dromedarius",
+      "habitat": "Desert",
+      "popularName": "Dromedary Camel"
+    },
+    {
+      "scientificName": "Todus mexicanus",
+      "habitat": "Tropical Forest",
+      "popularName": "Puerto Rican Tody"
+    },
+    {
+      "scientificName": "Tyto alba",
+      "habitat": "Various",
+      "popularName": "Barn Owl"
+    },
+    {
+      "scientificName": "Castor canadensis",
+      "habitat": "Rivers",
+      "popularName": "North American Beaver"
+    },
+    {
+      "scientificName": "Diceros bicornis",
+      "habitat": "Savanna",
+      "popularName": "Black Rhinoceros"
+    },
+    {
+      "scientificName": "Pandion haliaetus",
+      "habitat": "Coastal Areas",
+      "popularName": "Osprey"
+    },
+    {
+      "scientificName": "Hippopotamus amphibius",
+      "habitat": "Rivers",
+      "popularName": "Hippopotamus"
+    },
+    {
+      "scientificName": "Procyon lotor",
+      "habitat": "Various",
+      "popularName": "Raccoon"
+    },
+    {
+      "scientificName": "Alligator mississippiensis",
+      "habitat": "Wetlands",
+      "popularName": "American Alligator"
+    },
+    {
+      "scientificName": "Dendrobates tinctorius",
+      "habitat": "Tropical Rainforest",
+      "popularName": "Dyeing Poison Frog"
+    },
+    {
+      "scientificName": "Lynx canadensis",
+      "habitat": "Boreal Forest",
+      "popularName": "Canada Lynx"
+    },
+    {
+      "scientificName": "Macaca fuscata",
+      "habitat": "Temperate Forest",
+      "popularName": "Japanese Macaque"
+    },
+    {
+      "scientificName": "Leptonychotes weddellii",
+      "habitat": "Antarctic Coast",
+      "popularName": "Weddell Seal"
+    },
+    {
+      "scientificName": "Gopherus polyphemus",
+      "habitat": "Coastal Plain",
+      "popularName": "Gopher Tortoise"
+    },
+    {
+      "scientificName": "Myrmecophaga tridactyla",
+      "habitat": "Grasslands",
+      "popularName": "Giant Anteater"
+    },
+    {
+      "scientificName": "Aptenodytes forsteri",
+      "habitat": "Antarctica",
+      "popularName": "Emperor Penguin"
+    },
+    {
+      "scientificName": "Kobus ellipsiprymnus",
+      "habitat": "Savanna",
+      "popularName": "Waterbuck"
+    },
+    {
+      "scientificName": "Tapirus bairdii",
+      "habitat": "Tropical Forest",
+      "popularName": "Baird's Tapir"
+    },
+    {
+      "scientificName": "Pteronura brasiliensis",
+      "habitat": "Rivers",
+      "popularName": "Giant Otter"
+    }
+  ]
+}

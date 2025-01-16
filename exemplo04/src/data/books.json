@@ -1,0 +1,202 @@
+{
+  "books": [
+    {
+      "title": "To Kill a Mockingbird",
+      "mainAuthorName": "Harper Lee",
+      "publicationYear": 1960,
+      "pages": 281
+    },
+    {
+      "title": "1984",
+      "mainAuthorName": "George Orwell",
+      "publicationYear": 1949,
+      "pages": 328
+    },
+    {
+      "title": "Pride and Prejudice",
+      "mainAuthorName": "Jane Austen",
+      "publicationYear": 1813,
+      "pages": 432
+    },
+    {
+      "title": "The Great Gatsby",
+      "mainAuthorName": "F. Scott Fitzgerald",
+      "publicationYear": 1925,
+      "pages": 180
+    },
+    {
+      "title": "One Hundred Years of Solitude",
+      "mainAuthorName": "Gabriel García Márquez",
+      "publicationYear": 1967,
+      "pages": 417
+    },
+    {
+      "title": "The Catcher in the Rye",
+      "mainAuthorName": "J.D. Salinger",
+      "publicationYear": 1951,
+      "pages": 234
+    },
+    {
+      "title": "Brave New World",
+      "mainAuthorName": "Aldous Huxley",
+      "publicationYear": 1932,
+      "pages": 311
+    },
+    {
+      "title": "The Lord of the Rings",
+      "mainAuthorName": "J.R.R. Tolkien",
+      "publicationYear": 1954,
+      "pages": 1178
+    },
+    {
+      "title": "Don Quixote",
+      "mainAuthorName": "Miguel de Cervantes",
+      "publicationYear": 1605,
+      "pages": 863
+    },
+    {
+      "title": "The Hobbit",
+      "mainAuthorName": "J.R.R. Tolkien",
+      "publicationYear": 1937,
+      "pages": 310
+    },
+    {
+      "title": "Fahrenheit 451",
+      "mainAuthorName": "Ray Bradbury",
+      "publicationYear": 1953,
+      "pages": 256
+    },
+    {
+      "title": "Jane Eyre",
+      "mainAuthorName": "Charlotte Brontë",
+      "publicationYear": 1847,
+      "pages": 532
+    },
+    {
+      "title": "The Odyssey",
+      "mainAuthorName": "Homer",
+      "publicationYear": -800,
+      "pages": 541
+    },
+    {
+      "title": "Crime and Punishment",
+      "mainAuthorName": "Fyodor Dostoevsky",
+      "publicationYear": 1866,
+      "pages": 671
+    },
+    {
+      "title": "The Divine Comedy",
+      "mainAuthorName": "Dante Alighieri",
+      "publicationYear": 1320,
+      "pages": 798
+    },
+    {
+      "title": "Moby Dick",
+      "mainAuthorName": "Herman Melville",
+      "publicationYear": 1851,
+      "pages": 585
+    },
+    {
+      "title": "The Picture of Dorian Gray",
+      "mainAuthorName": "Oscar Wilde",
+      "publicationYear": 1890,
+      "pages": 254
+    },
+    {
+      "title": "War and Peace",
+      "mainAuthorName": "Leo Tolstoy",
+      "publicationYear": 1869,
+      "pages": 1225
+    },
+    {
+      "title": "The Grapes of Wrath",
+      "mainAuthorName": "John Steinbeck",
+      "publicationYear": 1939,
+      "pages": 464
+    },
+    {
+      "title": "Little Women",
+      "mainAuthorName": "Louisa May Alcott",
+      "publicationYear": 1868,
+      "pages": 759
+    },
+    {
+      "title": "The Canterbury Tales",
+      "mainAuthorName": "Geoffrey Chaucer",
+      "publicationYear": 1400,
+      "pages": 544
+    },
+    {
+      "title": "Ulysses",
+      "mainAuthorName": "James Joyce",
+      "publicationYear": 1922,
+      "pages": 730
+    },
+    {
+      "title": "The Count of Monte Cristo",
+      "mainAuthorName": "Alexandre Dumas",
+      "publicationYear": 1844,
+      "pages": 1276
+    },
+    {
+      "title": "Heart of Darkness",
+      "mainAuthorName": "Joseph Conrad",
+      "publicationYear": 1899,
+      "pages": 72
+    },
+    {
+      "title": "The Brothers Karamazov",
+      "mainAuthorName": "Fyodor Dostoevsky",
+      "publicationYear": 1880,
+      "pages": 824
+    },
+    {
+      "title": "Wuthering Heights",
+      "mainAuthorName": "Emily Brontë",
+      "publicationYear": 1847,
+      "pages": 342
+    },
+    {
+      "title": "Les Misérables",
+      "mainAuthorName": "Victor Hugo",
+      "publicationYear": 1862,
+      "pages": 1463
+    },
+    {
+      "title": "The Scarlet Letter",
+      "mainAuthorName": "Nathaniel Hawthorne",
+      "publicationYear": 1850,
+      "pages": 238
+    },
+    {
+      "title": "Anna Karenina",
+      "mainAuthorName": "Leo Tolstoy",
+      "publicationYear": 1877,
+      "pages": 864
+    },
+    {
+      "title": "The Trial",
+      "mainAuthorName": "Franz Kafka",
+      "publicationYear": 1925,
+      "pages": 178
+    },
+    {
+      "title": "The Iliad",
+      "mainAuthorName": "Homer",
+      "publicationYear": -762,
+      "pages": 683
+    },
+    {
+      "title": "Emma",
+      "mainAuthorName": "Jane Austen",
+      "publicationYear": 1815,
+      "pages": 474
+    },
+    {
+      "title": "The Adventures of Huckleberry Finn",
+      "mainAuthorName": "Mark Twain",
+      "publicationYear": 1884,
+      "pages": 366
+    }
+  ]
+}
